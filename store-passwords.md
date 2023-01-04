@@ -46,3 +46,29 @@ a file containing 4096 bits of hex digits which is the actual thing that you mus
 ```
 gpg --import key_backup.asc
 ```
+
+## Initialize an existing store from github
+
+* Take an `initialized` password-store that exists as a git repo, i.e. [secretbox](https://github.com/citizencloud/passwordstore)
+* Clone it!
+
+
+**The below command will clone the password store as is to the root password store**
+
+```
+gopass clone git@github.com:citizencloud/passwordstore.git
+```
+
+**However when using multiple stores, you may wish to use a custom, non-default root mount for your store. To do so:**
+
+```
+gopass clone git@github.com:citizencloud/passwordstore.git monk
+```
+
+The above command initializes the password store in the `~/.local/share/gopass/stores/monk` directory.
+
+**REMEMBER** to be able to use this non-root password store, you have to mount it!
+
+```
+gopass mounts add monk
+```
