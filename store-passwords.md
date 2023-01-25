@@ -72,3 +72,4 @@ The above command initializes the password store in the `~/.local/share/gopass/s
 ```
 gopass mounts add monk
 ```
+
