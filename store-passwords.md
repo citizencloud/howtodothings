@@ -49,14 +49,14 @@ gpg --import key_backup.asc
 
 ## Initialize an existing store from github
 
-* Take an `initialized` password-store that exists as a git repo, i.e. [secretbox](https://github.com/citizencloud/passwordstore)
+* Take an `initialized` password-store that exists as a git repo, i.e. [secretbox](https://github.com/citizencloud/secretbox)
 * Clone it!
 
 
 **The below command will clone the password store as is to the root password store**
 
 ```
-gopass clone git@github.com:citizencloud/passwordstore.git
+gopass clone git@github.com:citizencloud/secretbox.git
 ```
 
 **However when using multiple stores, you may wish to use a custom, non-default root mount for your store. To do so:**
