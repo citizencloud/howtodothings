@@ -62,7 +62,7 @@ gopass clone git@github.com:citizencloud/secretbox.git
 **However when using multiple stores, you may wish to use a custom, non-default root mount for your store. To do so:**
 
 ```
-gopass clone git@github.com:citizencloud/passwordstore.git monk
+gopass clone git@github.com:citizencloud/secretbox.git monk
 ```
 
 The above command initializes the password store in the `~/.local/share/gopass/stores/monk` directory.
